@@ -1,0 +1,85 @@
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+  <net id="PetriNet" type="http://ifnml.process-security.de/grammar/v1.0/ptnet">
+    <page id="top-level">
+      <place id="P1">
+        <name>
+          <text>P1</text>
+        </name>
+      </place>
+      <place id="P2">
+        <name>
+          <text>P2</text>
+        </name>
+      </place>
+      <place id="P3.2">
+        <name>
+          <text>P3.2</text>
+        </name>
+      </place>
+      <transition id="T3.1">
+        <name>
+          <text>T3.1</text>
+        </name>
+        <silent>false</silent>
+      </transition>
+      <transition id="T3.2">
+        <name>
+          <text>T3.2</text>
+        </name>
+        <silent>false</silent>
+      </transition>
+      <transition id="T1">
+        <name>
+          <text>T1</text>
+        </name>
+        <silent>false</silent>
+      </transition>
+      <transition id="T2">
+        <name>
+          <text>T2</text>
+        </name>
+        <silent>false</silent>
+      </transition>
+      <arc id="arcTP_T1P2" source="T1" target="P2">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arcPT_P2T2" source="P2" target="T2">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arcTP_T2P1" source="T2" target="P1">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arcPT_P2T3.1" source="P2" target="T3.1">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arcTP_T3.1P3.2" source="T3.1" target="P3.2">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arcPT_P1T1" source="P1" target="T1">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arcTP_T3.2P2" source="T3.2" target="P2">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arcPT_P3.2T3.2" source="P3.2" target="T3.2">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+    </page>
+  </net>
+</pnml>

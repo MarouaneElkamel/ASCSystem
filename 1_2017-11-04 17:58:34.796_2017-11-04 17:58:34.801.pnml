@@ -1,0 +1,32 @@
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+  <net id="PetriNet" type="http://ifnml.process-security.de/grammar/v1.0/ptnet">
+    <page id="top-level">
+      <place id="P1.2">
+        <name>
+          <text>P1.2</text>
+        </name>
+      </place>
+      <place id="P1.1">
+        <name>
+          <text>P1.1</text>
+        </name>
+      </place>
+      <transition id="T1">
+        <name>
+          <text>T1</text>
+        </name>
+        <silent>false</silent>
+      </transition>
+      <arc id="arcPT_P1.1T1" source="P1.1" target="T1">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+      <arc id="arcTP_T1P1.2" source="T1" target="P1.2">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+    </page>
+  </net>
+</pnml>

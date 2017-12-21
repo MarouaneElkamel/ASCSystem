@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.media.MediaView?>
+<SplitPane dividerPositions="0.658774373259053" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+           minWidth="-Infinity" orientation="VERTICAL" prefHeight="720.0" prefWidth="1080.0"
+           style="-fx-background-color: #050002; -fx-border-color: #050002;" xmlns="http://javafx.com/javafx/8.0.111"
+           xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLDocumentController">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="478.0" prefWidth="1078.0">
+            <children>
+                <StackPane layoutX="177.0" layoutY="95.0" prefHeight="468.0" prefWidth="1076.0"
+                           AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                           AnchorPane.topAnchor="0.0">
+                    <children>
+                        <MediaView fx:id="mediaView" fitHeight="480.0" fitWidth="640.0" preserveRatio="false"/>
+                    </children>
+                </StackPane>
+            </children>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="225.0" prefWidth="1078.0"
+                    style="-fx-background-color: #2A2A2A;">
+            <children>
+                <HBox fx:id="downBox" prefHeight="175.0" prefWidth="1078.0" style="-fx-background-color: #2A2A2A;"
+                      AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                      AnchorPane.topAnchor="0.0"/>
+            </children>
+        </AnchorPane>
+    </items>
+</SplitPane>
