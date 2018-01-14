@@ -48,12 +48,12 @@ private Button submit;
 public void initialize(URL url, ResourceBundle rb)
     {
 
-    List<Integer> list = new ArrayList<>();
+    List<Integer> list = new ArrayList<Integer>();
     for (int i =16;i<91;i++)
         {
         list.add(i);
         }
-    List<String> list1 = new ArrayList<>();
+    List<String> list1 = new ArrayList<String>();
     list1.add("Yes");
     list1.add("NO");
     ObservableList obList = FXCollections.observableList(list);
@@ -70,14 +70,14 @@ public void initialize(URL url, ResourceBundle rb)
     rentedChoice.setItems(obList1);
     securityChoice.getItems().clear();
     securityChoice.setItems(obList1);
-    List<String> list2 = new ArrayList<>();
+    List<String> list2 = new ArrayList<String>();
     list2.add("Dry");
     list2.add("Wet");
     list2.add("Sand/mud");
     list2.add("Snow covred");
     list2.add("Ice");
     ObservableList obList2 = FXCollections.observableList(list2);
-    List<String> list3 = new ArrayList<>();
+    List<String> list3 = new ArrayList<String>();
     list3.add("No adverse conditions");
     list3.add("Rain");
     list3.add("Sleet");

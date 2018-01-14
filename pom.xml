@@ -25,7 +25,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>Mouna</mainClass>
+                            <mainClass>Test</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

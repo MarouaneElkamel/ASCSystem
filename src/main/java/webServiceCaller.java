@@ -43,11 +43,11 @@ public class webServiceCaller {
         }
         return sb.toString();
     }
-    public static void main(String[] args) throws IOException {
+ /*   public static void main(String[] args) throws IOException {
         webServiceCaller ws = new webServiceCaller();
      ws.makethecall();
     }
-
+*/
     public void makethecall() throws ClientProtocolException, IOException
     {
         HttpClient httpclient = HttpClients.createDefault();
