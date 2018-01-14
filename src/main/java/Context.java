@@ -11,16 +11,17 @@ import javafx.stage.Stage;
  */
 public class Context
     {
+    static int webservicecall =0;
     private static boolean panic = false;
     private static double similarity = 0;
-    static int age_impact;
-    static int fatigue;
-    static  int rented;
-    static  int drunk;
+    static int age_impact=1;
+    static int fatigue=1;
+    static  int rented=1;
+    static  int drunk=1;
     static int weather;
-    static  int road;
-    static  int agressiv;
-    static  int security;
+    static  int road=1;
+    static  int agressiv=1;
+    static  int security=1;
     static int distance = 0;
     static int speed_diff=0;
     static int speedlimit=0;

@@ -11,20 +11,20 @@
           <text>P2</text>
         </name>
       </place>
-      <place id="P3.2">
+      <place id="P4.2">
         <name>
-          <text>P3.2</text>
+          <text>P4.2</text>
         </name>
       </place>
-      <transition id="T3.1">
+      <transition id="T4.2">
         <name>
-          <text>T3.1</text>
+          <text>T4.2</text>
         </name>
         <silent>false</silent>
       </transition>
-      <transition id="T3.2">
+      <transition id="T4.1">
         <name>
-          <text>T3.2</text>
+          <text>T4.1</text>
         </name>
         <silent>false</silent>
       </transition>
@@ -34,33 +34,22 @@
         </name>
         <silent>false</silent>
       </transition>
-      <transition id="T2">
-        <name>
-          <text>T2</text>
-        </name>
-        <silent>false</silent>
-      </transition>
+      <arc id="arcPT_P2T4.1" source="P2" target="T4.1">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
       <arc id="arcTP_T1P2" source="T1" target="P2">
         <inscription>
           <text>1</text>
         </inscription>
       </arc>
-      <arc id="arcPT_P2T2" source="P2" target="T2">
+      <arc id="arcPT_P4.2T4.2" source="P4.2" target="T4.2">
         <inscription>
           <text>1</text>
         </inscription>
       </arc>
-      <arc id="arcTP_T2P1" source="T2" target="P1">
-        <inscription>
-          <text>1</text>
-        </inscription>
-      </arc>
-      <arc id="arcPT_P2T3.1" source="P2" target="T3.1">
-        <inscription>
-          <text>1</text>
-        </inscription>
-      </arc>
-      <arc id="arcTP_T3.1P3.2" source="T3.1" target="P3.2">
+      <arc id="arcTP_T4.1P4.2" source="T4.1" target="P4.2">
         <inscription>
           <text>1</text>
         </inscription>
@@ -70,12 +59,7 @@
           <text>1</text>
         </inscription>
       </arc>
-      <arc id="arcTP_T3.2P2" source="T3.2" target="P2">
-        <inscription>
-          <text>1</text>
-        </inscription>
-      </arc>
-      <arc id="arcPT_P3.2T3.2" source="P3.2" target="T3.2">
+      <arc id="arcTP_T4.2P2" source="T4.2" target="P2">
         <inscription>
           <text>1</text>
         </inscription>

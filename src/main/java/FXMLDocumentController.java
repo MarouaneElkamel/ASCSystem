@@ -22,6 +22,7 @@ import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
 import javafx.scene.paint.Color;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
 import java.net.URL;
@@ -34,6 +35,8 @@ import java.util.logging.Logger;
  */
 public class FXMLDocumentController implements Initializable, CarInterface
     {
+        webServiceCaller ws = new webServiceCaller();
+
     private boolean firstTime = false;
     @FXML
     public HBox downBox;
@@ -174,6 +177,12 @@ public class FXMLDocumentController implements Initializable, CarInterface
                 Context.setPanic(true);
 
                 System.out.println("panic time");
+
+                    try {
+                        ws.makethecall();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                 }
             }, 7000);
         new java.util.Timer().schedule(new java.util.TimerTask()
