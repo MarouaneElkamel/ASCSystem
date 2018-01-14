@@ -11,7 +11,8 @@ import javafx.stage.Stage;
  */
 public class Context
     {
-    static int webservicecall =0;
+    static private int webservicecall =0;
+
     private static boolean panic = false;
     private static double similarity = 0;
     static int age_impact=1;

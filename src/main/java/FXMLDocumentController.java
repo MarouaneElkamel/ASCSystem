@@ -175,7 +175,7 @@ public class FXMLDocumentController implements Initializable, CarInterface
             public void run()
                 {
                 Context.setPanic(true);
-
+                if (Context.getMyController().speedGauge.getValue()>110) Context.speedlimit=1;
                 System.out.println("panic time");
 
                     try {
