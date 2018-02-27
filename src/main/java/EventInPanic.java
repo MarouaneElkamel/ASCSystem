@@ -69,6 +69,10 @@ public class EventInPanic
     }
     public double similarityTaux()
         {
+            if (Context.webservicecall == 1 )
+            {
+                removeAsc();
+            }
         double notther = 0;
         for (PTTransition p : panicnet.getTransitions())
             {
