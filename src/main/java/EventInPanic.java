@@ -21,8 +21,9 @@ public class EventInPanic
     {
     double notIn = 0;
     double action = 1;
-    PTNet normalNet = new PTNet();
-    PTNet panicnet = new PTNet();
+    static PTNet normalNet = new PTNet();
+
+    static PTNet panicnet = new PTNet();
     private boolean previousIncrease = false;
     private boolean previousdecrease = false;
 
@@ -47,6 +48,12 @@ public class EventInPanic
         normalNet.addFlowRelationTP("T2", "P1");
         normalNet.addPlace("P5");
         normalNet.addTransition("T5");
+            normalNet.addTransition("T3.2");
+            normalNet.addFlowRelationPT("P3.2", "T3.2");
+            normalNet.addFlowRelationTP("T3.2", "P2");
+            normalNet.addTransition("T4.2");
+            normalNet.addFlowRelationPT("P4.2", "T4.2");
+            normalNet.addFlowRelationTP("T4.2", "P2");
         normalNet.addFlowRelationPT("P2", "T5");
         normalNet.addFlowRelationTP("T5", "P5");
         normalNet.addTransition("T5.1");
@@ -55,6 +62,11 @@ public class EventInPanic
         }
     }
 
+    public void removeAsc()
+    {
+        normalNet.removeTransition("T3.2");
+        normalNet.removeTransition("T4.2");
+    }
     public double similarityTaux()
         {
         double notther = 0;
