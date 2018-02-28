@@ -12,7 +12,8 @@ public aspect ASC
     public void logBefore(JoinPoint joinPoint)
         {
         System.out.println(" log before ASC activation");
-        if (Context.getMyController().plusMinusTile.getDescription().equals("System ASC Inactive") && Context.getMyController().speedGauge.getValue() > 0)
+        if (Context.getMyController().plusMinusTile.getDescription().equals("System ASC Inactive") && 
+        Context.getMyController().speedGauge.getValue() > 0)
             {
             Context.ER.RecordASCActivationBefore();
             }
